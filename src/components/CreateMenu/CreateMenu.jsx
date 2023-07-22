@@ -1,19 +1,32 @@
 import CartWidget from "../CartWidget/CartWidget";
 import logo from "../../logo.jpg";
 import "./CreateMenu.css";
+import { Link } from "react-router-dom";
 
 function CreateMenu() {
   return (
     <>
       <nav className="navegacion">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div className="menus"> 
-          <a href="">Home</a>
-          <a href="">Productos</a>
-          <a href="">Clientes</a>
-          <a href="">Contacto</a>
-        </div>
-        <CartWidget></CartWidget>
+        <Link to='/'><img src={logo} className="App-logo" alt="logo" /></Link>
+        <ul className="menus">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/category/Ropa">Ropa</Link>
+          </li>
+          <li>
+            <Link to="/category/Calzado">Calzado</Link>
+          </li>
+          <li>
+            <Link to="/category/Accesorios">Accesorios</Link>
+          </li>
+          <li>
+            <Link to="/category/Relojes">Relojes</Link>
+          </li>
+        </ul>
+        <CartWidget></CartWidget> 
+
       </nav>
     </>
   );
