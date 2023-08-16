@@ -9,12 +9,14 @@ import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import { cartContext } from "../../App";
 import { useContext } from "react";
 import { CircleLoader } from "react-spinners";
+import Swal from "sweetalert2"; 
 
 function ItemDetailContainer() {
   const [product, setProduct] = useState({});
   const [isAddedToCart, setIsAddedToCart] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
+  
 
   const { addToCart } = useContext(cartContext);
 
@@ -31,7 +33,9 @@ function ItemDetailContainer() {
 
   function handleAddToCart(count) {
     addToCart(product, count);
-    alert(`Agregaste ${count} unidades de ${product.title} al carrito`);
+
+    // alert(`Agregaste ${count} unidades de ${product.title} al carrito`);
+    Swal.fire(`Agregaste ${count} unidades de ${product.title} al carrito`)
     setIsAddedToCart(true);
   }
 

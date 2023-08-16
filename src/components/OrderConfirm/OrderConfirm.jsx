@@ -24,12 +24,12 @@ function OrderConfirm() {
           <p>Nombre: {orderData.buyer["firstname"]}</p>
           <p>Apellido: {orderData.buyer["lastname"]}</p>
           <p>Edad: {orderData.buyer["age"]}</p>
-          <p>Total compra: ${orderData.total}</p>
+          <p>Total compra: ${orderData.total.toFixed(2)}</p>
           <p>Productos comprados: </p>
           {orderData.items.map((item) => {
             return (
               <p key={item.id}>
-                Producto: {item.title} - Cantidad: {item.count} - Precio unitario: ${item.price} - Precio total: ${item.count*item.price}
+                Producto: {item.title} - Cantidad: {item.count} - Precio unitario: ${item.price} - Precio total: ${(item.count*item.price).toFixed(2)}
               </p>
             );
           })}
