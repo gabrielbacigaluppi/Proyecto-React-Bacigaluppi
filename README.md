@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Proyecto de React - Ecommerce Bacigaluppi
+Este proyecto fue desarrollado como parte de un curso académico en Coderhouse para aprender los conceptos fundamentales de React. El objetivo del proyecto era aplicar estos conceptos en la construcción de una aplicación web utilizando la biblioteca de React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Conceptos Aprendidos
 
-## Available Scripts
+Durante el curso, se abordaron varios conceptos básicos y fundamentales de React, incluyendo:
 
-In the project directory, you can run:
+- Componentes y props
+- Estado y ciclo de vida
+- Manejo de eventos
+- Enrutamiento con React Router
+- Uso de Hooks (useState, useEffect, etc.)
+- Consumo de APIs
+- Estilos con CSS y CSS-in-JS
 
-### `npm start`
+## Clonar y Ejecutar el Proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Si deseas clonar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clona el repositorio desde GitHub:
 
-### `npm test`
+```bash
+git clone https://github.com/tu-usuario/tu-repositorio.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+cd nombre-del-proyecto
 
-### `npm run build`
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+Si eres un reclutador interesado en mi perfil como desarrollador de React, aquí hay algunas razones por las cuales creo que soy un buen candidato:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Conocimiento Sólido de React: He participado activamente en un proyecto académico donde he aplicado los conceptos fundamentales de React, lo que me ha brindado una base sólida en el desarrollo de aplicaciones web modernas.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Práctica en Uso de Herramientas: He trabajado con herramientas como React Router, Hooks y consumo de APIs, lo que me permite desarrollar aplicaciones web dinámicas y ricas en funcionalidades.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Capacidad para Aprender y Adaptarme: Durante el curso, he demostrado mi capacidad para aprender nuevas tecnologías y adaptarme a nuevos conceptos en un corto período de tiempo.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Buenas Prácticas de Desarrollo: Estoy comprometido con el uso de buenas prácticas de desarrollo, como la organización del código, la legibilidad y el uso de componentes reutilizables.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Si deseas saber más sobre mi perfil y experiencia en desarrollo React, no dudes en contactarme a través de mi correo electrónico bacigaluppi.gabriel@gmail.com.

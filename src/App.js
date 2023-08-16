@@ -6,6 +6,8 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import { createContext } from "react";
 import { useState } from "react";
 import CartContainer from "./components/CartContainer/CartContainer";
+import OrderConfirm from "./components/OrderConfirm/OrderConfirm";
+import Checkout from "./components/Checkout/Checkout";
 
 const cartContext = createContext({ cart: [] });
 
@@ -32,9 +34,20 @@ function CartContextProvider(props) {
     setCart([...nuevoCarrito]);
   }
 
+
+  const totalCarrito = cart.reduce((total, producto) => {
+    const precioTotalProducto = producto.price * producto.count;
+    return total + precioTotalProducto;
+  }, 0);
+
+  const emptyCart = () => {
+    setCart([]);
+  };
+
+
   return (
     <cartContext.Provider
-      value={{ cart, addToCart, getTotalItemsInCart, removeItemsInCart }}
+      value={{ cart, addToCart, getTotalItemsInCart, removeItemsInCart, emptyCart, totalCarrito }}
     >
       {props.children}
     </cartContext.Provider>
@@ -60,6 +73,8 @@ function App() {
               element={<ItemDetailContainer />}
             ></Route>
             <Route path="/cart" element={<CartContainer/>}></Route>
+            <Route path="/orderConfirm/:id" element={<OrderConfirm/>}></Route>
+            <Route path="/checkout" element={<Checkout/>}></Route>
             <Route path="*" element={<h1> Page not found </h1>}></Route>
           </Routes>
         </BrowserRouter>

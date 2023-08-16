@@ -1,21 +1,18 @@
 import React from "react";
 import { useContext } from "react";
 import { cartContext } from "../../App";
-
+import { Link, useNavigate } from "react-router-dom";
 
 function CartContainer() {
-  const { cart, removeItemsInCart } = useContext(cartContext);
-  //   Hacer el conditional rendering, si no hay carrito mostrar lo siguiente:
-  //   return <h1>No hay productos en el carrito</h1>
+  const { cart, removeItemsInCart, totalCarrito } = useContext(cartContext);
 
-  if (cart.length===0) {
-    return <h1>No hay productos en el carrito</h1>
+
+  //   Hacer el conditional rendering, si no hay carrito mostrar lo siguiente:
+  if (cart.length === 0) {
+    return <h1>No hay productos en el carrito</h1>;
   }
 
-  const totalCarrito = cart.reduce((total, producto) => {
-    const precioTotalProducto = producto.price * producto.count; 
-    return total + precioTotalProducto;
-  }, 0);
+
 
   return (
     <div>
@@ -30,11 +27,14 @@ function CartContainer() {
           </div>
         );
       })}
-      
+
       <div>Total de la compra: ${totalCarrito.toFixed(2)}</div>
-      <button>Comprar</button>
+      <Link to={"/checkout"}>
+        <button>Comprar</button>
+      </Link>
     </div>
   );
 }
 
 export default CartContainer;
+

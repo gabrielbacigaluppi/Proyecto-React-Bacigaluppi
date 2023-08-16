@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import getData, { getCategoryData } from "../asyncMock/asyncMock";
+import { getData } from "../../services/firebase";
+import { getCategoryData } from "../../services/firebase";
 import Item from "./Item";
 import "./ItemListContainer.css";
 import { CircleLoader } from "react-spinners";
